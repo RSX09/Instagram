@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accedi</title>
+
+<!-- FONT BILLABONG -->
+<style>
+@import url('https://fonts.cdnfonts.com/css/billabong');
+</style>
+
+<style>
+body {
+    margin: 0;
+    background: #fafafa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* CENTRATURA */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+    width: 360px;
+}
+
+/* BOX LOGIN */
+.box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+}
+
+/* LOGO INSTAGRAM STYLE */
+.logo {
+    font-family: 'Billabong', cursive;
+    font-size: 60px;
+    font-weight: normal;
+    color: #262626;
+    margin-bottom: 25px;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+/* BUTTON LOGIN */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #4dabf7;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* PASSWORD DIMENTICATA */
+.forgot {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 8px;
+    color: #0095f6;
+    cursor: pointer;
+}
+
+/* DIVISORE */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.divider span {
+    margin: 0 10px;
+}
+
+/* FACEBOOK */
+.fb {
+    background: none;
+    border: none;
+    color: #385185;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* SIGNUP */
+.signup {
+    margin-top: 15px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="container">
+
+        <!-- LOGIN BOX -->
+        <div class="box">
+
+            <div class="logo">Instagram</div>
+
+            <input type="text" placeholder="Numero di telefono, nome utente o email">
+            <input type="password" placeholder="Password">
+
+            <div class="forgot">Password dimenticata?</div>
+
+            <button>Accedi</button>
+
+            <div class="divider"><span>OPPURE</span></div>
+
+            <button class="fb">Accedi con Facebook</button>
+
+        </div>
+
+        <!-- SIGNUP -->
+        <div class="signup">
+            Non hai un account? <a href="#">Iscriviti</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
