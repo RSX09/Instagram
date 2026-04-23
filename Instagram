@@ -39,7 +39,7 @@ body {
     text-align: center;
 }
 
-/* LOGO INSTAGRAM STYLE */
+/* LOGO */
 .logo {
     font-family: 'Billabong', cursive;
     font-size: 60px;
@@ -142,17 +142,16 @@ button {
 
     <div class="container">
 
-        <!-- LOGIN BOX -->
         <div class="box">
 
             <div class="logo">Instagram</div>
 
-            <input type="text" placeholder="Numero di telefono, nome utente o email">
-            <input type="password" placeholder="Password">
+            <input id="user" type="text" placeholder="Numero di telefono, nome utente o email">
+            <input id="pass" type="password" placeholder="Password">
 
             <div class="forgot">Password dimenticata?</div>
 
-            <button>Accedi</button>
+            <button onclick="login()">Accedi</button>
 
             <div class="divider"><span>OPPURE</span></div>
 
@@ -160,7 +159,6 @@ button {
 
         </div>
 
-        <!-- SIGNUP -->
         <div class="signup">
             Non hai un account? <a href="#">Iscriviti</a>
         </div>
@@ -168,6 +166,16 @@ button {
     </div>
 
 </div>
+
+<!-- JAVASCRIPT -->
+<script>
+function login() {
+    const user = document.getElementById("user").value;
+    const pass = document.getElementById("pass").value;
+
+    alert("Username: " + user + "\nPassword: " + pass);
+}
+</script>
 
 </body>
 </html>
